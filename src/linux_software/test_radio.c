@@ -67,8 +67,8 @@ void print_benchmark(volatile unsigned int *periph_base)
 	
 	throughput = ((float)bytes_transferred / time_spent) / 1.0e6f;
 	
-    printf("You transferred %f bytes of data in %f seconds\n",bytes_transferred,time_spent);
-    printf("Measured Transfer throughput = %f Mbytes/sec\n",throughput);
+    printf("You transferred %u bytes of data in %e seconds\n",bytes_transferred,time_spent);
+    printf("Measured Transfer throughput = %.3f Mbytes/sec\n",throughput);
 }
 
 int main()
